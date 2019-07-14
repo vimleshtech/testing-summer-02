@@ -1,0 +1,121 @@
+Data type
+Operator
+Condition
+Input and output
+Condition
+Loop
+Array
+String Handling
+Functions
+
+----
+Exception Handling
+File Handling
+---
+OOPS  -2 
+--
+Generic and Collection    -1 
+---
+Selenium 
+
+
+----
+Exception Handling
+File Handling
+
+Q.
+for (int i =1; i<10; i++)
+{
+	System.out.print("(");
+	for (int j =1; j<=i; j++)
+	{
+
+		if(i<j)
+		System.out.print(j+"+");
+		else
+		System.out.print(j);
+	}
+	System.out.print(")+");
+
+
+}
+
+
+Exception Handling
+============================
+Exception :  is runtime error which may or may not occur
+		Example:
+			33/0		: error 
+			a = [11,22,4]
+			a[5]  		: error , out of index
+Handling:  tackle the error when this will occur
+			
+Objective of Exception Handling:
+----------------------------------------------------------
+-> Customize the error message , show custom error message
+-> Prevent the code from failure due single or few errors
+-> Store the error log 
+
+There are following keywords:
+	-try		: block of logical or code/satement which can cause the error
+	-catch		: handler, receive the error message when error will occur
+	-finally		: is optional which may or may not implemented
+			: howevere this block will execute always if finally is implemented
+	-throw		: is custom error, show error message based on user condition 
+	-throws 		: is alternative way to allow the code for compilation 
+			
+
+Note:
+	- Can we use/implement multiple catch block with ne try?
+			yes...howerver Exception should be at last
+
+		try{
+
+		}
+		catch(ArithmeticException er)
+		{
+
+		}
+		catch(Exception er) //Exception is generic type which can receive any types of error
+		{
+
+
+		}
+		finally{
+
+		}
+	- Can we implement try/exception handling withoug catch?
+			yes, then we have to implment finally block
+
+
+		try{
+
+		}
+		finally{
+
+		}	
+
+			
+
+
+
+File Handling:
+=======================
+Read and write operation from /to file
+
+There are following inbuilt classes:
+
+		--read --
+import java.IO.FileReader;				::read file from physical location 		
+import java.IO.BufferedReader;			::read data from file object
+
+		--writer--
+import java.IO.FileWriter;				:: write data to file (physical location)
+import java.IO.BufferedWriter;			:: write data to buffered memory 
+
+	
+
+
+
+
+
